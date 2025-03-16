@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio multimèdia amb exemples d'imatges, vídeo i àudio">
+    <title>Project M9</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a class="logo" href="#">
+                    <i class="fas fa-play-circle"></i>Project M9 Rafael Valerio
+                </a>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+                <div class="navbar-collapse">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#inici">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacte">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inici" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Multimedia Interactiva</h1>
+                <div class="description">
+                    <p>Descubre una fusión innovadora de tecnología y creatividad</p>
+                    <p>Explora la galería digital donde las imágenes SVG cobran vida junto a imagenes de mapa de bits de alta resolución, Realizadas en actividad AC1</p>
+                    <p>Sumérgete en la sección de video con una producción audiovisual vanguardista que redefine el género tecno con una interpretación moderna y vibrante de "Rave de Cucarachas" Desarrolladas en la Actividad AC3</p>
+                    <p>Experimenta la evolución del sonido a través de mi seccion de audio profesional, presentando una reinterpretación exclusiva de "Memory Reboot" en formato phonk, disponible en múltiples formatos de audio, WAV, OGG, MP3, ACC, M4A y FLAC de alta fidelidad, Realizada en la actividad AC2</p>
+                </div>
+                <a href="#galeria" class="btn btn-outline">Explorar Mi Galería</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#galeria"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria de Imagenes</h2>
+                <p>Una muesstra de Mis trabajos Realizados en SVG e Imagenes de Mapa de bits</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- SVG Casa -->
+                    <div class="swiper-slide">
+                        <div class="svg-container">
+                            <svg width="200" height="200">
+                                <rect width="200" height="200" fill="#88cdeb" />
+                                <rect y="150" width="200" height="50" fill="#8cec8c" />
+                                <rect x="50" y="100" width="100" height="70" fill="#fe9f77"  />
+                                <polygon points="50,100 100,50 150,100" fill="#cc823b"  />
+                                <rect x="90" y="140" width="20" height="30" fill="#86400e"  />
+                                <circle cx="95" cy="155" r="2" fill="#fdd702" />
+                                <rect x="60" y="120" width="20" height="20" fill="#eff4fe"  />
+                                <rect x="120" y="120" width="20" height="20" fill="#eff4fe"  />
+                                <circle cx="30" cy="30" r="15" fill="#fed803" />
+                            </svg>
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h3>Casa con Sol</h3>
+                            <p>Ilustración SVG de una casa con sol</p>
+                        </div>
+                    </div>
+
+                    <!-- SVG Autobús -->
+                    <div class="swiper-slide">
+                        <div class="svg-container">
+                            <svg width="200" height="200">
+                                <rect width="200" height="200" fill="#dcdcdc" />
+                                <rect x="30" y="70" width="140" height="40" fill="#fe0101"  />
+                                <rect x="60" y="40" width="80" height="30" fill="#fe0101"  />
+                                <rect x="70" y="45" width="25" height="20" fill="#88cdeb"  />
+                                <rect x="105" y="45" width="25" height="20" fill="#88cdeb"  />
+                                <circle cx="70" cy="100" r="20" fill="#323232" />
+                                <circle cx="70" cy="100" r="10" fill="grey"/>
+                                <circle cx="130" cy="100" r="20" fill="#323232" />
+                                <circle cx="130" cy="100" r="10" fill="grey"/>
+                                <rect x="30" y="90" width="10" height="10" fill="#feff03" />
+                                <rect x="160" y="90" width="10" height="10" fill="#feff03" />
+                            </svg>
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h3>Autobús</h3>
+                            <p>Ilustración SVG de un autobús</p>
+                        </div>
+                    </div>
+
+                    <!-- SVG Robot -->
+                    <div class="swiper-slide">
+                        <div class="svg-container">
+                            <svg width="200" height="300">
+                                <rect width="200" height="300" fill="#f4f4f4" />
+                                <rect width="90" height="60" x="55" y="20" rx="10" ry="10" fill="#9f9f9f" />
+                                <circle cx="86" cy="45" r="10" fill="#05ff03"  />
+                                <circle cx="86" cy="45" r="7" fill="white"  />
+                                <circle cx="113" cy="45" r="10" fill="#05ff03"  />
+                                <circle cx="113" cy="45" r="7" fill="white"  />
+                                <line x1="100" y1="20" x2="100" y2="6" stroke="#9f9f9f" stroke-width="4" />
+                                <circle cx="100" cy="5" r="5" fill="#fe0101" />
+                                <rect x="62" y="90" width="75" height="95" fill="#9f9f9f"  />
+                                <circle cx="100" cy="120" r="5" fill="#fe0101" />
+                                <circle cx="100" cy="140" r="5" fill="#05ff03" />
+                                <circle cx="100" cy="160" r="5" fill="#0d00fe" />
+                                <rect x="33" y="100" width="30" height="10" fill="#9f9f9f" />
+                                <rect x="137" y="100" width="30" height="10" fill="#9f9f9f"  />
+                            </svg>
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h3>Robot</h3>
+                            <p>Ilustración SVG de un robot</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 1 -->
+                    <div class="swiper-slide">
+                        <div class="svg-container">
+                            <img src="../assets/images/image1.png" alt="Experiència d'Usuari">
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h3>Imagene de Casa con Sol</h3>
+                            <p>Imagen Mapa de bits formato PNG</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="swiper-slide">
+                        <div class="svg-container">
+                            <img src="../assets/images/image2.png" alt="Multimèdia Interactiu">
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h3>Imagen de Auto</h3>
+                            <p>Imagen de Mapa de bits formato PNG</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="swiper-slide">
+                        <div class="svg-container">
+                            <img src="../assets/images/image3.png" alt="Animacions Creatives">
+                        </div>
+                        <div class="swiper-slide-content">
+                            <h3>Imagen de Robot</h3>
+                            <p>Imagen de Mapa de Bits formato PNG</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section id="multimedia" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contenido Multimedia</h2>
+                <p>Explora mis contenidos de Audio & Vídeo</p>
+            </div>
+            <div class="grid">
+                <div class="grid-item">
+                    <div class="multimedia-container">
+                        <h3><i class="fas fa-video"></i>Reproductor de Vídeo</h3>
+                        <div class="video-player">
+                            <div class="video-container">
+                                <video id="mainVideo" preload="metadata" poster="assets/images/video-poster.jpg">
+                                    <source src="https://niliara.net/garbage/video.mp4" type="video/mp4">
+                                    <source src="assets/video/demo.webm" type="video/webm">
+                                    <track kind="captions" src="assets/video/captions.vtt" srclang="ca" label="Català">
+                                    <p>El teu navegador no suporta el tag de vídeo HTML5.</p>
+                                </video>
+                            </div>
+                            <div class="video-controls">
+                                <button class="skip-backward" title="Retroceder 10 segundos">
+                                    <i class="fas fa-backward"></i>
+                                </button>
+                                <button class="play-pause" title="Reproduir/Pausar">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="skip-forward" title="Avanzar 10 segundos">
+                                    <i class="fas fa-forward"></i>
+                                </button>
+                                <div class="timeline-container">
+                                    <div class="timeline">
+                                        <div class="timeline-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="video-time">0:00 / 0:00</div>
+                                <button class="volume-btn" title="Volum">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <div class="video-volume-control">
+                                    <i class="fas fa-volume-up video-volume-icon"></i>
+                                    <input type="range" class="video-volume-slider" min="0" max="100" value="100" title="Control de volum">
+                                </div>
+                                <button class="fullscreen" title="Pantalla completa">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="multimedia-container">
+                        <h3><i class="fas fa-music"></i>Reproductor de Audio</h3>
+                        <div class="audio-player">
+                            <div class="album-art">
+                                <img src="assets/images/coveralbum.webp" alt="Portada del álbum" class="album-cover">
+                            </div>
+                            
+                            <div class="audio-timeline">
+                                <div class="audio-progress"></div>
+                                <div id="currentTime">0:00 / 0:00</div>
+                            </div>
+
+                            <div class="audio-controls">
+                                <button class="prev-track" title="Retroceder 10 segundos">
+                                    <i class="fas fa-backward"></i>
+                                </button>
+                                <button class="play-pause" title="Reproduir/Pausar">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="stop" title="Parar">
+                                    <i class="fas fa-stop"></i>
+                                </button>
+                                <button class="next-track" title="Avanzar 10 segundos">
+                                    <i class="fas fa-forward"></i>
+                                </button>
+                            </div>
+                            <div class="volume-controls">
+                                <button class="volume-down" title="Baixar volum">
+                                    <i class="fas fa-volume-down"></i>
+                                </button>
+                                <input type="range" class="volume-slider" min="0" max="100" value="100" title="Control de volum">
+                                <button class="volume-up" title="Pujar volum">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                            </div>
+
+                            <audio id="mainAudio" preload="metadata">
+                                <p>El teu navegador no suporta el tag d'àudio HTML5.</p>
+                            </audio>
+
+                            <div class="playlist">
+                                <h4><i class="fas fa-list-ul"></i>Playlist</h4>
+                                <ul class="playlist-items">
+                                    <li class="playlist-item active" data-track="assets/audio/memoryReboothz.wav" data-album-art="assets/images/album1.jpg">
+                                        <button class="playlist-btn">
+                                            <i class="fas fa-play-circle"></i>
+                                            <div class="track-info">
+                                                <strong>Track WAV</strong>
+                                                <span>Format: WAV</span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="playlist-item" data-track="assets/audio/memoryReboot.flac" data-album-art="assets/images/album2.jpg">
+                                        <button class="playlist-btn">
+                                            <i class="fas fa-play-circle"></i>
+                                            <div class="track-info">
+                                                <strong>Track FLAC</strong>
+                                                <span>Format: FLAC</span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="playlist-item" data-track="assets/audio/memoryReboot.ogg" data-album-art="assets/images/album3.jpg">
+                                        <button class="playlist-btn">
+                                            <i class="fas fa-play-circle"></i>
+                                            <div class="track-info">
+                                                <strong>Track OGG</strong>
+                                                <span>Format: OGG</span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="playlist-item" data-track="assets/audio/memoryReboot.mp3" data-album-art="assets/images/album4.jpg">
+                                        <button class="playlist-btn">
+                                            <i class="fas fa-play-circle"></i>
+                                            <div class="track-info">
+                                                <strong>Track MP3</strong>
+                                                <span>Format: MP3</span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="playlist-item" data-track="assets/audio/memoryReboothz.aac" data-album-art="assets/images/album5.jpg">
+                                        <button class="playlist-btn">
+                                            <i class="fas fa-play-circle"></i>
+                                            <div class="track-info">
+                                                <strong>Track AAC</strong>
+                                                <span>Format: AAC</span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="playlist-item" data-track="assets/audio/memoryReboot.m4a" data-album-art="assets/images/album6.jpg">
+                                        <button class="playlist-btn">
+                                            <i class="fas fa-play-circle"></i>
+                                            <div class="track-info">
+                                                <strong>Track M4A</strong>
+                                                <span>Format: M4A</span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacte" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactanos</h2>
+                <p>Tienes alguna pregunta? Escribenos!</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nombre</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="nom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="missatge">Mensaje</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-comment"></i>
+                            <textarea id="missatge" rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <h3>Siguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Project M9 Rafael Valerio. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Tornar a dalt">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
