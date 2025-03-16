@@ -1,80 +1,46 @@
-# Landing Page Multimèdia
+# Landing Page Multimedia
+## Rafael Valerio
 
-Aquest projecte és una landing page moderna i interactiva que demostra l'ús de diferents elements multimèdia i tècniques de desenvolupament web.
+Este proyecto es una landing page moderna e interactiva que demuestra el uso de diferentes elementos multimedia y técnicas de desarrollo web.
 
-## Característiques
+## Características
 
-- Disseny responsiu utilitzant Bootstrap 5
-- Galeria d'imatges interactiva amb Swiper.js
-- Reproducció de vídeo i àudio HTML5
-- Formulari de contacte amb validació i feedback utilitzant SweetAlert2
-- Animacions de scroll suaus
-- Integració de xarxes socials
-- Optimització d'imatges i contingut multimèdia
+- Diseño responsive 
+- Galería de imágenes interactiva con Swiper.js  
+- Reproducción de video y audio en HTML5  
+- Formulario de contacto con validación y feedback utilizando SweetAlert2  
+- Animaciones de desplazamiento suaves  
+- Integración con redes sociales  
+- Optimización de imágenes y contenido multimedia  
 
-## Tecnologies Utilitzades
+## Tecnologías Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- Swiper.js
-- SweetAlert2
-- Font Awesome
+- HTML5  
+- CSS3  
+- JavaScript  
+- Swiper.js  
+- SweetAlert2  
+- Font Awesome  
 
-## Estructura del Projecte
+## Estructura del Proyecto
 
-```
-landing-page/
-│
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── main.js
-└── assets/
-    ├── images/
-    ├── audio/
-    └── video/
-```
+Project_M9-UF2/ │
+├── index.html 
+├── css/ 
+│ └── styles.css 
+├── js/ 
+│ └── main.js 
+└── assets/ 
+├── images/ 
+├── audio/
+└── video/
 
-## Instal·lació
 
-1. Clona el repositori:
-```bash
-git clone https://github.com/usuari/landing-page.git
-```
+## Formatos Multimedia
 
-2. Navega fins al directori del projecte:
-```bash
-cd landing-page
-```
+- Video: MP4 con códec H.264  
+- Audio: WAV, M4A, FLAC, ACC, MP3 y OGG para máxima compatibilidad  
 
-3. Obre l'arxiu `index.html` al teu navegador web preferit.
+## Licencia
 
-## Optimització d'Imatges
-
-- Les imatges han estat optimitzades per a la web
-- S'utilitzen formats adequats segons el tipus d'imatge:
-  - JPEG per a fotografies
-  - PNG per a imatges amb transparència
-  - SVG per a icones i gràfics vectorials
-
-## Formats Multimèdia
-
-- Vídeo: MP4 amb codec H.264
-- Àudio: MP3 i OGG per a màxima compatibilitat
-
-## Contribucions
-
-Les contribucions són benvingudes! Si vols contribuir:
-
-1. Fes un Fork del projecte
-2. Crea una nova branca (`git checkout -b feature/millora`)
-3. Fes commit dels canvis (`git commit -m 'Afegeix alguna millora'`)
-4. Puja la branca (`git push origin feature/millora`)
-5. Obre un Pull Request
-
-## Llicència
-
-Aquest projecte està sota la llicència MIT. Consulta l'arxiu `LICENSE` per a més detalls. 
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.  
