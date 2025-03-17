@@ -38,6 +38,16 @@ body {
     animation: slidein 120s forwards infinite alternate;
     position: relative;
 }
+@keyframes slidein {
+    0%, 100% {
+        background-position: 0% 50%;
+        background-size: 300% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+        background-size: 300% 100%;
+    }
+}
 
 body::before {
     content: '';
@@ -791,6 +801,42 @@ img.album-cover {
     filter: drop-shadow(0 0 10px rgba(3, 233, 244, 0.5));
 }
 
+#audio-playerm h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+#audio-playerm h3 i {
+    color: #03e9f4;
+    font-size: 1.8rem;
+    filter: drop-shadow(0 0 10px rgba(3, 233, 244, 0.5));
+}
+#audio-playerm {
+
+    background: linear-gradient(105deg, rgba(55, 97, 235, 0.8), rgba(77, 158, 220, 0.3), rgba(241, 48, 125, 0.8));
+    border-radius: var(--card-border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 5px 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Layout para Video Player */
 .video-player {
     width: 100%;
@@ -1052,21 +1098,49 @@ video {
 /* Reproductor de Audio Mejorado */
 .audio-player {
     width: 100%;
-    max-width: 800px;
-    background: rgba(55, 97, 235, 0.3);
+    max-width: 960px;
+    background: linear-gradient(105deg, 
+        rgba(55, 97, 235, 0.8) 0%,
+        rgba(77, 158, 220, 0.3) 50%,
+        rgba(241, 48, 125, 0.8) 100%);
     border-radius: var(--card-border-radius);
-    padding: 40px;
+    padding: 50px;
     position: relative;
     display: grid;
     grid-template-areas:
+        "header header"
         "album playlist"
         "progress progress"
         "controls controls"
         "volume volume";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px auto auto auto;
+    grid-template-rows: auto 300px auto auto auto;
     gap: 15px;
     margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 5px 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.audio-player h3 {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.audio-player h3 i {
+    color: #03e9f4;
+    font-size: 1.8rem;
+    filter: drop-shadow(0 0 10px rgba(3, 233, 244, 0.5));
 }
 
 .audio-timeline {
@@ -1397,15 +1471,16 @@ video {
 @media (max-width: 768px) {
     .audio-player {
         grid-template-areas:
+            "header"
             "album"
             "playlist"
             "progress"
             "controls"
             "volume";
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
         padding: 20px;
-    gap: 10px;
+        gap: 10px;
     }
 
     .album-art {

@@ -236,17 +236,17 @@ navLinks.forEach(link => {
 const audioPlayer = document.querySelector('.audio-player');
 if (audioPlayer) {
     const audio = document.getElementById('mainAudio');
-    const playPauseBtn = audioPlayer.querySelector('.play-pause');
-    const prevBtn = audioPlayer.querySelector('.prev-track');
-    const nextBtn = audioPlayer.querySelector('.next-track');
-    const volumeSlider = audioPlayer.querySelector('.volume-slider');
-    const timeline = audioPlayer.querySelector('.audio-timeline');
-    const progress = audioPlayer.querySelector('.audio-progress');
+const playPauseBtn = audioPlayer.querySelector('.play-pause');
+const prevBtn = audioPlayer.querySelector('.prev-track');
+const nextBtn = audioPlayer.querySelector('.next-track');
+const volumeSlider = audioPlayer.querySelector('.volume-slider');
+const timeline = audioPlayer.querySelector('.audio-timeline');
+const progress = audioPlayer.querySelector('.audio-progress');
     const volumeDownBtn = audioPlayer.querySelector('.volume-down');
     const volumeUpBtn = audioPlayer.querySelector('.volume-up');
     const stopBtn = audioPlayer.querySelector('.stop');
     const timeDisplay = audioPlayer.querySelector('#currentTime');
-    const playlistItems = audioPlayer.querySelectorAll('.playlist-item');
+const playlistItems = audioPlayer.querySelectorAll('.playlist-item');
     
     let currentTrackIndex = 0;
     let isDragging = false;
@@ -264,11 +264,11 @@ if (audioPlayer) {
     };
 
     // Función para formatear el tiempo
-    const formatTime = (seconds) => {
-        const min = Math.floor(seconds / 60);
-        const sec = Math.floor(seconds % 60);
-        return `${min}:${sec.toString().padStart(2, '0')}`;
-    };
+const formatTime = (seconds) => {
+    const min = Math.floor(seconds / 60);
+    const sec = Math.floor(seconds % 60);
+    return `${min}:${sec.toString().padStart(2, '0')}`;
+};
 
     // Función para cambiar la pista activa
     const setActiveTrack = (index) => {
@@ -291,16 +291,16 @@ if (audioPlayer) {
         });
     });
 
-    // Controles de reproducción
-    playPauseBtn.addEventListener('click', () => {
-        if (audio.paused) {
-            audio.play();
-            playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
-        } else {
-            audio.pause();
-            playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-        }
-    });
+// Controles de reproducción
+playPauseBtn.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    } else {
+        audio.pause();
+        playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+    }
+});
 
     stopBtn.addEventListener('click', () => {
         audio.pause();
@@ -317,9 +317,9 @@ if (audioPlayer) {
     nextBtn.addEventListener('click', () => {
         audio.currentTime = Math.min(audio.currentTime + 10, audio.duration);
         updateUI();
-    });
+});
 
-    // Control de volumen
+// Control de volumen
     volumeSlider.addEventListener('input', () => {
         audio.volume = volumeSlider.value / 100;
     });
@@ -331,7 +331,7 @@ if (audioPlayer) {
 
     volumeUpBtn.addEventListener('click', () => {
         audio.volume = Math.min(1, audio.volume + 0.1);
-        volumeSlider.value = audio.volume * 100;
+    volumeSlider.value = audio.volume * 100;
     });
 
     // Control de la línea de tiempo
@@ -345,7 +345,7 @@ if (audioPlayer) {
 
     document.addEventListener('mousemove', (e) => {
         if (isDragging) {
-            const rect = timeline.getBoundingClientRect();
+    const rect = timeline.getBoundingClientRect();
             const percent = Math.min(Math.max(0, e.clientX - rect.left), rect.width) / rect.width;
             audio.currentTime = percent * audio.duration;
             updateUI();
@@ -367,7 +367,7 @@ if (audioPlayer) {
     });
     
     // Reproducir siguiente pista cuando termine la actual
-    audio.addEventListener('ended', () => {
+audio.addEventListener('ended', () => {
         currentTrackIndex = (currentTrackIndex + 1) % playlistItems.length;
         setActiveTrack(currentTrackIndex);
     });
