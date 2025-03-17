@@ -1124,6 +1124,18 @@ video {
         inset 0 5px 10px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    animation: slidein 15s ease-in-out infinite;
+}
+
+@keyframes slidein {
+    0%, 100% {
+        background-position: 0% 50%;
+        background-size: 300% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+        background-size: 300% 100%;
+    }
 }
 
 .audio-player h3 {
